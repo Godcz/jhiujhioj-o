@@ -12,6 +12,15 @@ import Messaging from './pages/Messaging';
 import Projects from './pages/Projects';
 import CMS from './pages/CMS';
 import Formations from './pages/Formations';
+import Presentation from './pages/Presentation';
+import Facultes from './pages/Facultes';
+import Recherche from './pages/Recherche';
+import VieEtudiante from './pages/VieEtudiante';
+import International from './pages/International';
+import Admission from './pages/Admission';
+import Actualites from './pages/Actualites';
+import Contact from './pages/Contact';
+import ForgotPassword from './pages/ForgotPassword';
 
 // Protected Route Component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -68,6 +77,17 @@ const AppContent: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          
+          {/* Public Information Pages */}
+          <Route path="/presentation" element={<Presentation />} />
+          <Route path="/facultes" element={<Facultes />} />
+          <Route path="/recherche" element={<Recherche />} />
+          <Route path="/vie-etudiante" element={<VieEtudiante />} />
+          <Route path="/international" element={<International />} />
+          <Route path="/admission" element={<Admission />} />
+          <Route path="/actualites" element={<Actualites />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/formations" element={<Formations />} />
           
           {/* Protected Routes */}
